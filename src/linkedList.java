@@ -1,5 +1,8 @@
+import java.util.LinkedList;
+
 public class linkedList {
     private Node head;
+    private Node tail;
     private int size = 0;
 
     private class Node{ //각 노드!
@@ -15,6 +18,13 @@ public class linkedList {
             this.idx = size;
         }
 
+        public void setIdx(int idx) {
+            this.idx = idx;
+        }
+
+        public int getIdx() {
+            return idx;
+        }
     }
 
     @Override
@@ -22,20 +32,29 @@ public class linkedList {
         if(head == null) return "-1";
         else{
             Node tempNode = head;
-            StringBuilder data = new StringBuilder();
-            while(tempNode != null){
-                data.append(tempNode.data + ", ");
+            for (int i = 0; i < getSize(); i++) {
+                System.out.print(tempNode == tail ?
+                        tempNode.data + "" : tempNode.data + ", ");
                 tempNode = tempNode.nextNode;
             }
-            return data.toString().replaceAll(", $", "");
         }
+        return "";
+    }
 
+    public int getSize() {
+        return size;
     }
 
     public void add(Object input){
         Node newNode = new Node(input);
         if (head == null) {
             head = newNode;
+            size++;
+        }
+        else if(tail == null){
+            tail = newNode;
+            head.nextNode = tail;
+            tail.preNode = head;
             size++;
         }
         else{
@@ -45,6 +64,7 @@ public class linkedList {
             }
             tempNode.nextNode = newNode;
             newNode.preNode = tempNode;
+            tail = newNode;
             size++;
         }
     }
@@ -56,4 +76,46 @@ public class linkedList {
         }
         return tempNode.data;
     }
+
+    public void delete(int idx) {
+        if (head == null) {
+            System.out.println("이미 빈 배열입니다");
+            return;
+        }
+        if(idx == 0){
+            head = head.nextNode;
+            head.preNode = null;
+            editIdx();
+            return;
+        }
+        if(idx == size-1){
+            tail = tail.preNode;
+            tail.nextNode = null;
+            editIdx();
+            return;
+        }
+
+        for (Node temp = head; temp != null; temp = temp.nextNode) {
+            if (temp.idx == idx) {
+                if(temp.idx == size -1) {
+                    temp = null;
+                    editIdx();
+                    return;
+                }
+                temp.preNode.nextNode = temp.nextNode;
+                temp.nextNode.preNode = temp.preNode;
+            }
+        }
+        editIdx();
+    }
+    public void editIdx(){
+        int num = 0;
+        for (Node temp = head; temp != null; temp = temp.nextNode) {
+            temp.setIdx(num++);
+        }
+        size--;
+    }
+
+
+
 }
