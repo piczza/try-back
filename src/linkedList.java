@@ -127,6 +127,13 @@ public class linkedList<T> {
     }
 
     //큐메소드!================================
-
+    public T dequeue (){
+        return head.data;
+    }
+    public T poll(){
+        T temp = head.data;
+        delete(0);
+        return temp;
+    }
 
 }
