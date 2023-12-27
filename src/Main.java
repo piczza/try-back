@@ -7,7 +7,13 @@ public class Main {
         myList.add(123);
         myList.add(3);
         myList.add(6767);
+        myList.add(99);
         myList.toString();
+        System.out.println("===");
+        System.out.println(myList.pop());
+        System.out.println(myList.toString());
+        System.out.println(myList.pop());
+        System.out.println(myList.peek());
 
 
 

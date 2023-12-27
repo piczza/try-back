@@ -32,7 +32,7 @@ public class linkedList<T> {
         if(head == null) return "-1";
         else{
             Node tempNode = head;
-            for (int i = 0; i < getSize(); i++) {
+            for (int i = 0; i < size(); i++) {
                 System.out.print(tempNode == tail ?
                         tempNode.data + "" : tempNode.data + ", ");
                 tempNode = tempNode.nextNode;
@@ -41,7 +41,7 @@ public class linkedList<T> {
         return "";
     }
 
-    public int getSize() {
+    public int size() {
         return size;
     }
 
@@ -116,6 +116,17 @@ public class linkedList<T> {
         size--;
     }
 
+    //스택메소드!================================
+    public T pop(){
+        T temp = tail.data;
+        delete(size-1);
+        return temp;
+    }
+    public T peek(){
+        return tail.data;
+    }
+
+    //큐메소드!================================
 
 
 }

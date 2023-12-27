@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e054a2d-d582-4139-8595-2478ea65e05b" name="Changes" comment="5. 기능 추가. delete(인덱스): 인덱스에 해당하는 값 제거">
+    <list default="true" id="7e054a2d-d582-4139-8595-2478ea65e05b" name="Changes" comment="6. 제네릭 구현. linkedList를 생성할 때 자료형도 같이 선언">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList.java" afterDir="false" />
@@ -75,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703668912240</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="6. 제네릭 구현. linkedList를 생성할 때 자료형도 같이 선언">
+      <option name="closed" value="true" />
+      <created>1703669435274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703669435274</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -83,6 +91,7 @@
     <MESSAGE value="3. 기능 오버라이딩. toString(): 데이터 문자열로 출력" />
     <MESSAGE value="4. 기능 추가. get(인덱스): 인덱스에 해당하는 값 리턴" />
     <MESSAGE value="5. 기능 추가. delete(인덱스): 인덱스에 해당하는 값 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="5. 기능 추가. delete(인덱스): 인덱스에 해당하는 값 제거" />
+    <MESSAGE value="6. 제네릭 구현. linkedList를 생성할 때 자료형도 같이 선언" />
+    <option name="LAST_COMMIT_MESSAGE" value="6. 제네릭 구현. linkedList를 생성할 때 자료형도 같이 선언" />
   </component>
 </project>
