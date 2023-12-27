@@ -1,17 +1,17 @@
 import java.util.LinkedList;
 
-public class linkedList {
+public class linkedList<T> {
     private Node head;
     private Node tail;
     private int size = 0;
 
     private class Node{ //각 노드!
-        private Object data;
+        private T data;
         private Node nextNode;
         private int idx;
         private Node preNode; //이전 노드 넣어서 양방향 검색 쉽게 해봐야지!
 
-        public Node(Object input) {
+        public Node(T input) {
             this.data = input;
             this.nextNode = null;
             this.preNode = null;
@@ -45,7 +45,7 @@ public class linkedList {
         return size;
     }
 
-    public void add(Object input){
+    public void add(T input){
         Node newNode = new Node(input);
         if (head == null) {
             head = newNode;
