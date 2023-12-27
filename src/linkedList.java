@@ -15,15 +15,31 @@ public class linkedList {
 
     }
 
+    @Override
+    public String toString() {
+        if(head == null) return "-1";
+        else{
+            Node tempNode = head;
+            StringBuilder data = new StringBuilder();
+            while(tempNode != null){
+                data.append(tempNode.data + ", ");
+                tempNode = tempNode.nextNode;
+            }
+            return data.toString().replaceAll(", $", "");
+        }
+
+    }
+
     public void add(Object input){
         Node newNode = new Node(input);
         if (head == null) head = newNode;
         else{
             Node tempNode = head;
             while(tempNode.nextNode != null){
-                tempNode = newNode;
+                tempNode = tempNode.nextNode;
             }
             tempNode.nextNode = newNode;
+            newNode.preNode = tempNode;
         }
     }
 }
