@@ -8,8 +8,10 @@ public class Main {
         myLinkedList.add('우');
         myLinkedList.add('와');
         myLinkedList.add("되는거같은데");
-        myLinkedList.add(new char[] {'되', '나'}); //안되네ㅠㅠ
+        myLinkedList.add(new char[] {'되', '나'}); // 출력이 안되네ㅠㅠ
 
         System.out.println(myLinkedList.toString());
+        System.out.println(myLinkedList.get(2));
+
     }
 }
