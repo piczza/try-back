@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e054a2d-d582-4139-8595-2478ea65e05b" name="Changes" comment="7. Stack구조 구현. pop(), peek() 구현함">
+    <list default="true" id="7e054a2d-d582-4139-8595-2478ea65e05b" name="Changes" comment="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList.java" afterDir="false" />
     </list>
@@ -89,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703670679857</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함.">
+      <option name="closed" value="true" />
+      <created>1703673126301</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703673126301</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -99,6 +108,7 @@
     <MESSAGE value="5. 기능 추가. delete(인덱스): 인덱스에 해당하는 값 제거" />
     <MESSAGE value="6. 제네릭 구현. linkedList를 생성할 때 자료형도 같이 선언" />
     <MESSAGE value="7. Stack구조 구현. pop(), peek() 구현함" />
-    <option name="LAST_COMMIT_MESSAGE" value="7. Stack구조 구현. pop(), peek() 구현함" />
+    <MESSAGE value="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함." />
+    <option name="LAST_COMMIT_MESSAGE" value="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함." />
   </component>
 </project>

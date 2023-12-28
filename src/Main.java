@@ -1,22 +1,24 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.function.IntToDoubleFunction;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("시작");
 
-        linkedList<Integer> myList = new linkedList<>();
+        linkedList<String> myList = new linkedList<>();
 
-        myList.add(123);
-        myList.add(3);
-        myList.add(6767);
-        myList.add(99);
+        myList.add("3");
+        myList.add("굿");
+        myList.add("잘 되는구만");
+        myList.add("good");
         myList.toString();
-        System.out.println("===");
-        System.out.println(myList.poll());
-        System.out.println(myList.toString());
-        System.out.println(myList.dequeue());
-        System.out.println(myList.poll());
-        System.out.println(myList.toString());
+        System.out.println("===========");
 
-
+        for (String n : myList) System.out.println(n);
 
     }
+
 }
+
+
