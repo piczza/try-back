@@ -73,7 +73,7 @@ public class linkedList<T> implements Iterable<T> {
         }
     }
 
-    public Object get(int idx) {
+    public T get(int idx) {
         Node tempNode = head;
         while (tempNode.idx != idx) {
             tempNode = tempNode.nextNode;
@@ -162,6 +162,18 @@ public class linkedList<T> implements Iterable<T> {
             T temp = (T) head.getData();
             delete(0);
             return temp;
+        }
+
+        public void insert(T input){
+        Node tempN = new Node(input);
+            if(head == null) head = tempN;
+            else {
+                head.preNode = tempN;
+                tempN.nextNode = head;
+                head = tempN;
+            }
+            editIdx();
+            size += 2;
         }
 
 

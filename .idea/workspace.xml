@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e054a2d-d582-4139-8595-2478ea65e05b" name="Changes" comment="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함.">
+    <list default="true" id="7e054a2d-d582-4139-8595-2478ea65e05b" name="Changes" comment="9. foreach문 구현.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/updateLog" beforeDir="false" afterPath="$PROJECT_DIR$/updateLog" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703673126301</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="9. foreach문 구현.">
+      <option name="closed" value="true" />
+      <created>1703729316020</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703729316020</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -109,6 +118,22 @@
     <MESSAGE value="6. 제네릭 구현. linkedList를 생성할 때 자료형도 같이 선언" />
     <MESSAGE value="7. Stack구조 구현. pop(), peek() 구현함" />
     <MESSAGE value="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함." />
-    <option name="LAST_COMMIT_MESSAGE" value="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함." />
+    <MESSAGE value="9. foreach문 구현." />
+    <option name="LAST_COMMIT_MESSAGE" value="9. foreach문 구현." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/linkedList.java</url>
+          <line>166</line>
+          <properties class="linkedList" method="insert">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
