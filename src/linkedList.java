@@ -32,10 +32,23 @@ public class linkedList<T> implements Iterable<T> {
             return data;
         }
     }
+    private void isSetSizeMinus(boolean b){
+        if(b == true){
+            size = size > 0 ? size-1 : 0;
+        }
+        if(!b){
+            size++;
+        }
+    }
 
     @Override
     public String toString() {
-        if (head == null) return "-1";
+        if (head == null){
+            System.out.println("빈 배열입니다.");
+        }
+        else if (size == 1){
+            System.out.print(head.data + "");
+        }
         else {
             Node tempNode = head;
             for (int i = 0; i < size(); i++) {
@@ -44,7 +57,7 @@ public class linkedList<T> implements Iterable<T> {
                 tempNode = tempNode.nextNode;
             }
         }
-        return "";
+        return "\n";
     }
 
     public int size() {
@@ -55,12 +68,12 @@ public class linkedList<T> implements Iterable<T> {
         Node newNode = new Node(input);
         if (head == null) {
             head = newNode;
-            size++;
+            isSetSizeMinus(false);
         } else if (tail == null) {
             tail = newNode;
             head.nextNode = tail;
             tail.preNode = head;
-            size++;
+            isSetSizeMinus(false);
         } else {
             Node tempNode = head;
             while (tempNode.nextNode != null) {
@@ -69,7 +82,7 @@ public class linkedList<T> implements Iterable<T> {
             tempNode.nextNode = newNode;
             newNode.preNode = tempNode;
             tail = newNode;
-            size++;
+            isSetSizeMinus(false);
         }
     }
 
@@ -86,15 +99,26 @@ public class linkedList<T> implements Iterable<T> {
             System.out.println("이미 빈 배열입니다");
             return;
         }
-        if (idx == 0) {
-            head = head.nextNode;
-            head.preNode = null;
+        if (size == 1) {
+            try {
+                head = null;
+                tail = null;
+
+            } catch (NullPointerException ne){
+                System.out.println("빈 배열입니다.");
+            }
             editIdx();
             return;
         }
         if (idx == size - 1) {
             tail = tail.preNode;
             tail.nextNode = null;
+            editIdx();
+            return;
+        }
+        if(idx == 0){
+            head = head.nextNode;
+            head.preNode = null;
             editIdx();
             return;
         }
@@ -118,10 +142,9 @@ public class linkedList<T> implements Iterable<T> {
         for (Node temp = head; temp != null; temp = temp.nextNode) {
             temp.setIdx(num++);
         }
-        size--;
+        isSetSizeMinus(true);
     }
 
-    //Iterable 인터페이스의 메소드!====== 포이치가 알아서 갖다쓰는듯...!
     @Override
     public Iterator<T> iterator() {
         return new Iterator<T>() {
@@ -172,8 +195,11 @@ public class linkedList<T> implements Iterable<T> {
                 tempN.nextNode = head;
                 head = tempN;
             }
-            editIdx();
-            size += 2;
+            int num = 0;
+            for (Node temp = head; temp != null; temp = temp.nextNode) {
+                temp.setIdx(num++);
+            }
+            isSetSizeMinus(false);
         }
 
 
