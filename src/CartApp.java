@@ -6,15 +6,23 @@ public class CartApp{
     public static void main(String[] args) {
         //상품 목록 생성
         Set<Product> productSet = new HashSet<>();
-        Product book = new Product("책");
-        Product mouse = new Product("마우스");
-        Product phone = new Product("폰");
-        productSet.add(book);
-        productSet.add(mouse);
-        productSet.add(phone);
+        BufferedReader br = null;
+        String line;
+        try {
+            br = new BufferedReader(new InputStreamReader(new FileInputStream("src/productList.csv"), "UTF-8"));
+            while((line = br.readLine()) != null){
+                String[] temp= line.split(",");
+
+                Product tempP = new Product(temp[0], temp[1], Integer.parseInt(temp[2]));
+                productSet.add(tempP);
+
+            }
+        }catch (Exception e){
+            System.out.println("오류가 발생했습니다.");
+        }
 
         //상품 목록 확인
-        System.out.println("고유한 상품 목록======================");
+        System.out.println("진열된 상품 목록======================");
         for(Product product : productSet){
             System.out.println(product.getName() + ": " + product.getPrice() + "원");
         }
@@ -23,7 +31,6 @@ public class CartApp{
         Cart myCart = new Cart();
 
         //장바구니에 상호작용
-        myCart.addProduct(book, 5);
 
         myCart.showItems();
     }

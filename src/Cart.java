@@ -17,7 +17,7 @@ public class Cart {
 
     //화면에 장바구니 출력================
     public void showItems(){
-        System.out.println("내 카트 출력======================");
+        System.out.println("내 카트 출력=========================");
         for (Map.Entry<Product, Integer> entry : cart.entrySet()){
             System.out.printf("%s가 %d개", entry.getKey().getName(), entry.getValue());
         }
