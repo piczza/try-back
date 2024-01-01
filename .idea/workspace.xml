@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d97868ee-86fd-49d6-bd16-42a312c8aed6" name="변경" comment="구현: 장바구나 상품 추가/제거/출력">
+    <list default="true" id="d97868ee-86fd-49d6-bd16-42a312c8aed6" name="변경" comment="구현: csv파일에서 상품 목록 읽어오기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updateLog" beforeDir="false" afterPath="$PROJECT_DIR$/updateLog" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;piczza&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="dcd6b04f-a65d-42e9-8569-8232d6b4a154" />
+        <option name="url" value="https://github.com/piczza/cartApp.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -73,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703878153311</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="구현: csv파일에서 상품 목록 읽어오기">
+      <option name="closed" value="true" />
+      <created>1703885891687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703885891687</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -93,19 +113,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="구현: 상품 아이템" />
     <MESSAGE value="구현: 장바구나 상품 추가/제거/출력" />
-    <option name="LAST_COMMIT_MESSAGE" value="구현: 장바구나 상품 추가/제거/출력" />
+    <MESSAGE value="구현: csv파일에서 상품 목록 읽어오기" />
+    <option name="LAST_COMMIT_MESSAGE" value="구현: csv파일에서 상품 목록 읽어오기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CartApp.java</url>
-          <line>35</line>
+          <line>81</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CartApp.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/CartApp.java</url>
-          <line>5</line>
+          <line>7</line>
           <properties class="CartApp" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
