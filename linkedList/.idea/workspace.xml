@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e054a2d-d582-4139-8595-2478ea65e05b" name="Changes" comment="10. 기능 추가. insert(값): 처음에 값 추가.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2a70N7OdfuIZhTZF5O26q4rb3ZW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e054a2d-d582-4139-8595-2478ea65e05b" name="Changes" comment="" />
+      <created>1703654266993</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703654266993</updated>
+    </task>
+    <task id="LOCAL-00001" summary="기능 추가. add(값): 뒤에 값 추가">
+      <option name="closed" value="true" />
+      <created>1703655877201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703655877201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="3. 기능 오버라이딩. toString(): 데이터 문자열로 출력">
+      <option name="closed" value="true" />
+      <created>1703656378316</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703656378316</updated>
+    </task>
+    <task id="LOCAL-00003" summary="4. 기능 추가. get(인덱스): 인덱스에 해당하는 값 리턴">
+      <option name="closed" value="true" />
+      <created>1703658445526</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703658445526</updated>
+    </task>
+    <task id="LOCAL-00004" summary="5. 기능 추가. delete(인덱스): 인덱스에 해당하는 값 제거">
+      <option name="closed" value="true" />
+      <created>1703668912240</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703668912240</updated>
+    </task>
+    <task id="LOCAL-00005" summary="6. 제네릭 구현. linkedList를 생성할 때 자료형도 같이 선언">
+      <option name="closed" value="true" />
+      <created>1703669435274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703669435274</updated>
+    </task>
+    <task id="LOCAL-00006" summary="7. Stack구조 구현. pop(), peek() 구현함">
+      <option name="closed" value="true" />
+      <created>1703670679857</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703670679857</updated>
+    </task>
+    <task id="LOCAL-00007" summary="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함.">
+      <option name="closed" value="true" />
+      <created>1703673126301</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703673126301</updated>
+    </task>
+    <task id="LOCAL-00008" summary="9. foreach문 구현.">
+      <option name="closed" value="true" />
+      <created>1703729316020</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703729316020</updated>
+    </task>
+    <task id="LOCAL-00009" summary="기능 추가. insert(값): 처음에 값 추가.">
+      <option name="closed" value="true" />
+      <created>1703731065016</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703731065016</updated>
+    </task>
+    <task id="LOCAL-00010" summary="10. 기능 추가. insert(값): 처음에 값 추가.">
+      <option name="closed" value="true" />
+      <created>1703731089463</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703731089463</updated>
+    </task>
+    <task id="LOCAL-00011" summary="10. 기능 추가. insert(값): 처음에 값 추가.">
+      <option name="closed" value="true" />
+      <created>1703731183349</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703731183349</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="기능 추가. add(값): 뒤에 값 추가" />
+    <MESSAGE value="3. 기능 오버라이딩. toString(): 데이터 문자열로 출력" />
+    <MESSAGE value="4. 기능 추가. get(인덱스): 인덱스에 해당하는 값 리턴" />
+    <MESSAGE value="5. 기능 추가. delete(인덱스): 인덱스에 해당하는 값 제거" />
+    <MESSAGE value="6. 제네릭 구현. linkedList를 생성할 때 자료형도 같이 선언" />
+    <MESSAGE value="7. Stack구조 구현. pop(), peek() 구현함" />
+    <MESSAGE value="8. Queue구조 구현. dequeue(): 반환, poll(): 반환 및 삭제 구현함." />
+    <MESSAGE value="9. foreach문 구현." />
+    <MESSAGE value="기능 추가. insert(값): 처음에 값 추가." />
+    <MESSAGE value="10. 기능 추가. insert(값): 처음에 값 추가." />
+    <option name="LAST_COMMIT_MESSAGE" value="10. 기능 추가. insert(값): 처음에 값 추가." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>5</line>
+          <properties class="Main" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
